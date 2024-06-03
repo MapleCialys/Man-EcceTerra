@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="Config\style.css">
+	<script src="Config\script.js"></script>
+	<title>Manuel BricsEcceTerra</title>
+</head>
+<body>
+	<div class="global-container">
+<nav class="side-nav">
+	<div class="nav-logo" onclick="window.location.reload()">
+		<img src="Images\ecce_terra_renv_vierge.png" alt="logo" width="250px">
+<h2>Manuel</h2>
+	</div>
+	<a id="sidef" href="#" class="bloc-link active" onclick="showf()">
+		<img src="Images\engrenages.png">
+		<span class="nav-links">Fonctions</span>
+	</a>
+		<a id="sidem" href="#" class="bloc-link" onclick="showm()">
+		<img src="Images\methodes.png">
+		<span class="nav-links">Méthodes</span>
+	</a>
+		<a id="sideo" href="#" class="bloc-link" onclick="showo()">
+		<img src="Images\drawing-compass.png">
+		<span class="nav-links">Outils</span>
+	</a>
+		<a id="contact_button" href="#" class="bloc-link" onclick="showc()">
+		<img src="Images\contact.png">
+		<span class="nav-links">Contact</span>
+	</a>
+</nav>
+<main class="main-content">
+<h1>BricsEcceTerra</h1>
+<div class="input-control">
+	<label for="search">
+		<img src="Images\chercher.png">
+	</label>
+	<input type="text" id="search" placeholder="Recherche" oninput="powerSearch(this.value)">
+</div>
+<div id="fonctions">
+<h3>Fonctions</h3>
+<big><strong>Lignes:</strong></big>
+<ul>
+	<li data-key="fonctions,3,trois,cotes,lignes,amorce,structure"><a href="Fonctions\3cotes.html">3 côtés</a></li>
+	<li data-key="fonctions,4,quatre,structure,cotes,lignes"><a href="Fonctions\4cotes.html">4 côtés</a></li>
+	<li data-key="fonctions,galerie,lignes"><a href="Fonctions\gal.html">Galerie</a></li>
+	<li data-key="fonctions,escaliers,lignes,marches"><a href="Fonctions\esc.html">Escalier</a></li>
+</ul>
+<big><strong>Textes:</strong></big>
+<ul>
+	<li data-key="textes,arcs,rayons,cercles"><a href="Fonctions\arcray.html">Arc/Rayon</a></li>
+	<li data-key="textes,bulles,descriptions,technique,parcelles,blocs,annotatifs"><a href="Fonctions\blockdt.html">Bulles annotatives</a></li>
+	<li data-key="textes,bulles,descriptions,technique,parcelles"><a href="Fonctions\bul.html">Bulle pour description technique</a></li>
+	<li data-key="textes,bulles,parcelles,descriptions"><a href="Fonctions\desc.html">Bulle pour parcelle</a></li>
+	<li data-key="textes,distances,gisements,segments"><a href="Fonctions\distgis.html">Distance/Gisement</a></li>
+	<li data-key="textes,justifier,insertion,justification"><a href="Fonctions\ju.html">Justifier</a></li>
+	<li data-key="textes,majuscules,minuscules,case"><a href="Fonctions\et_maj.html">Minuscule/Majuscule</a></li>
+	<li data-key="textes,parenthèses,parentheses"><a href="Fonctions\parenthese.html">Parenthèse</a></li>
+	<li data-key="textes,rotations,orientation,orienter,tourner,inversion,inverser"><a href="Fonctions\rot-element.html">Rotation 180°</a></li>
+</ul>
+<big><strong>Fonctions annotatives:</strong></big>
+<ul>
+	<li data-key="annotatives,changement,echelle,échelles,cotes,côtes,hachures,blocs,fleches,flèches,changer"><a href="Fonctions\chasc.html">Changement d’échelle annotative</a></li>
+	<li data-key="annotatives,changement,cotes,dessus"><a href="Fonctions\uppercote.html">Cotes au dessus</a></li>
+	<li data-key="annotatives,pentes,elevations,élevations,elévations,élévations,pourcentage,points,altitudes"><a href="Fonctions\pente-dim-z0.html">Pente TXT</a></li>
+	<li data-key="annotatives,pentes,elevations,élevations,elévations,élévations,pourcentage,courbes, niveaux,altitudes"><a href="Fonctions\pente-dim.html">Pente Z</a></li>
+</ul>
+<big><strong>Fonctions utilitaires</strong></big>
+<ul>
+	<li data-key="utilitaires,additions,soustractions,nombres,"><a href="Fonctions\addition.html">Addition/Soustraction</a></li>
+	<li data-key="utilitaires,inscription,superficie,zone"><a href="Fonctions\writ-are.html">Inscription de superficie</a></li>
+	<li data-key="utilitaires,superficie,mise a jour,mise à jour"><a href="Fonctions\area-updt.html">Mise à jour de superficie</a></li>
+</ul>
+<big><strong>Commandes:</strong></big>
+<ul>
+	<li data-key="commandes,ajouter,supprimer,sommets,polylignes"><a href="Fonctions\addremove.html">Ajouter et supprimer des sommets</a></li>
+	<li data-key="commandes,cheminement,distances,gisement,servitudes"><a href="Fonctions\chem.html">Cheminement</a></li>
+	<li data-key="commandes,projetés,calques,futur"><a href="Fonctions\makep.html">Créer calque projeté</a></li>
+	<li data-key="commandes,détruit,calques"><a href="Fonction\makex.html">Créer calque détruit</a></li>
+	<li data-key="commandes,dictionnaires,pcodes"><a href="Fonctions\pcode.html">Dictionnaire de Pcode</a></li>
+	<li data-key="commandes,existants,projetés,futur,"><a href="Fonctions\setfut.html">Existant et projeté</a></li>
+	<li data-key="commandes,grille,profils,courbes,coupes"><a href="Fonctions\grid.html">Grille de profil</a></li>
+	<li data-key="commandes,légendes,legendes,automatique"><a href="Fonctions\legend.html">Légende</a></li>
+	<li data-key="commandes,lots,cartouche,automatique"><a href="Fonctions\lotcart.html">Lots pour cartouche</a></li>
+	<li data-key="commandes,mesures,rapides,bâtiments,batiments"><a href="Fonctions\mesbat.html">Mesures rapides (bâtiment)</a></li>
+	<li data-key="commandes,mesures,rapides,terrain"><a href="Fonctions\lotiss.html">Mesures rapides (terrain)</a></li>
+	<li data-key="commandes,numéros,points,associés,croix,pcode"><a href="Fonctions\matpoint.html">Point associé</a></li>
+	<li data-key="commandes,pentes,cercles,implantations,"><a href="Fonctions\circleslope.html">Pentes sur cercle</a></li>
+	<li data-key="commandes,terrain,preparation,préparation,présentation,fenêtres"><a href="Fonctions\prep.html">Préparation terrain</a></li>
+	<li data-key="commandes,terrain,projection,3D,modèle,"><a href="Fonctions\tinproject.html">Projection sur modèle terrain</a></li>
+	<li data-key="commandes,regions,espaces,libres,rapide,superficie"><a href="Fonctions/region.html">Région rapide</a></li>
+	<li data-key="commandes,regions,espaces,libres,rapide,superficie,multiple"><a href="Fonctions/regionplus.html">Région rapide multiple</a></li>
+	<li data-key="commandes,polyligne,segments,arc,lignes"><a href="Fonctions\arcline.html">Transformer des segments</a></li>
+</ul>
+</div>
+<div id="methodes">
+<h3>Méthodes</h3>
+<ul>
+	<li data-key="methodes,méthodes,courbes,niveaux"><a href="Methodes\cdn.html">Courbes de niveaux</a></li>
+	<li data-key="methodes,méthodes,comparer,extractions,dwgcomparer,imports"><a href="Methodes\dwgcomparer.html">Comparer (import des extractions)</a></li>
+	<li data-key="methodes,méthodes,dxf,blocs,préparation,terrain"><a href="Methodes\dxf.html">Création d'un DXF</a></li>
+	<li data-key="methodes,méthodes,profils,terrain,coupes"><a href="Methodes\profils.html">Profils terrain</a></li>
+	<li data-key="methodes,méthodes,parcelles,sinueuses,visions"><a href="Methodes\parcelles_sinueuse.html">Parcelles avec sinueuse</a></li>
+	<li data-key="methodes,méthodes,sélection,rapide"><a href="Methodes\quickselect.html">Sélection rapide</a></li>
+	<li data-key="methodes,tableau,raccourcis,vision"><a href="Methodes\shortkeyvision.html">Tableau des raccourcis Vision</a></li>
+	<li data-key="methodes,méthodes,traitements,extractions,cadastre,cadastrale"><a href="Methodes\traitement.html">Traitement extraction cadastrale</a></li>
+</ul>
+</div>
+<div id="outils">
+	<h3>Outils</h3>
+	<big><strong><u>Conversion de longueur.</u></strong></big><br><br>
+	<div id="convim">
+		impérial &rarr; métrique <button onclick="switchsup('im')"class="imgbtnparent"><img class="imgbtn" src="Images\switch.png" alt="switch"></button><br>
+		<input id="pieds" type="text" placeholder="pieds" oninput="convim()">
+		<input id="pouces" type="text" placeholder="pouces" oninput="convim()">
+		&rArr;
+		<span id="retconvim"></span>
+	</div>
+	<div id="convmi" style="display:none;">	
+	métrique &rarr; impérial <button onclick="switchsup('mi')"class="imgbtnparent"><img class="imgbtn" src="Images\switch.png" alt="switch"></button><br>
+		<input id="metres" type="text" placeholder="Mètres" oninput="convmi()">
+		&rArr;
+		<span id="retconvmi"></span>
+	</div><hr>
+	<big><strong><u>Conversion de superficie.</u></strong></big><br><br>
+	<div id="convp2m2">
+		p² &rarr; m² <button onclick="switchsup('pm')"class="imgbtnparent"><img class="imgbtn" src="Images\switch.png" alt="switch"></button><br>
+		<input id="pieds2" type="text" placeholder="p²" oninput="convp2m2()">
+		&rArr;
+		<span id="retconvp2m2"></span>
+	</div>
+	<div id="convm2p2" style="display:none;">
+		m² &rarr; p² <button onclick="switchsup('mp')"class="imgbtnparent"><img class="imgbtn" src="Images\switch.png" alt="switch"></button><br>
+		<input id="metres2" type="text" placeholder="m²" oninput="convm2p2()">
+		&rArr;
+		<span id="retconvm2p2"></span>
+	</div><hr>
+</div>
+<div id="contact">
+	<h3>Contact</h3>
+	Pour toutes questions, remarques, suggestions, assistance<br>
+	contactez moi.<br>
+	<div class="com">
+	<a href="mailto:mfrancois@ecceterra.com">Courriel</a>
+	<a href="#">Teams: @mfrancois</a>
+	<a href="#">Tel. poste 110</a>
+	</div>
+</div>
+</main>
+	</div>
+</body>
+<!--Graphiste des icones: Freepik / Parzival’ 1997 / Uniconlabs-->
+</html>

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="Config/style.css">
+	<title>BricsEcceTerraV23.6</title>
+</head>
+<body>
+	<div class="manlink"><a href="man.html">Aller au manuel</a></div>
+	<div class="cornerLogo"><img src="Images\Logo.png" width="300px"></div>
+	<h1>BricsEcceTerra</h1>
+
+	<div class="tec">
+		<big><strong>Travail en cours:</strong></big>
+		<ul>
+			<li class="done">Epaisseur de limite de propriété dans la légende</li>
+		</ul>
+	</div>
+    <h2>Mise à jour v23.6</h2>2024-05-21
+	<h3>Fonctions ajoutées (palette d'outils)</h3>
+	<big><strong>Textes :</strong></big><br>
+	<ul>
+	    <li>Cote pour implantations (préréglage de cotations bleues à double unités)</li>
+	</ul>
+	<big><strong>Commandes :</strong></big><br>
+	<ul>
+	    <li><a href="Fonctions\region.html">Région rapide</a></li>
+	    <li><a href="Fonctions\regionplus.html">Région rapide multiple</a></li>
+	    <li><a href="Fonctions\tincreate">Création de surface TIN</a></li>
+	    <li><a href="Fonctions\tinproject">Projeter vers surface TIN</a></li>
+	    <li><a href="Fonctions\grid.html">Grille de profil</a></li>
+	</ul>
+	<h3>Corrections apportées :</h3>
+	<ul>
+	    <li>La partie "Courbe de niveaux" de la palette d'outils est devenue "Civil" pour accueillir de nouvelles fonctions.</li>
+	    <li>Les blocs POINTCOTE sont maintenant sensibles à la fonction d'échelle.</li>
+	    <li>La commande d'échelle causait des crashs lorsque certains blocs étaient présents.</li>
+	    <li>La fonction arcline ne se lançait pas dans certains cas.</li>
+	</ul>
+	<hr>
+    <h2>Mise a jour v23.5</h2>2024-04-19
+    <h3>Fonctions ajoutées (palette d'outils)</h3>
+	<big><strong>Textes:</strong></big><br>
+    <ul>
+        <li><a href="Fonctions/blockdt.html">Bulles annotatives</a></li>
+    </ul>
+	<h3>Corrections apportées:</h3>
+	<ul>
+		<li>La fonction de changement d'échelle gère maintenant les textes et les blocs annotatifs.</li>
+		<li>La fonction <a href="Fonctions/area-updt.html">Area-updt</a> a été améliorée.</li>
+		<li>La fonction de vérification de dessin applique maintenant une échelle de type de ligne à 1 pour toutes les lignes et polylignes.</li>
+		<li>La fonction d'annotation de bâtiment inscrit les mesures dans le bon style de texte.</li>
+		<li>Le bloc de Tige de fer a été revu pour une meilleur lisibilité.</li>
+		<li>Les cartouches des plans on été modifié. Le gestionnaire d'état de visibilité a été ajouté au profil.</li>
+		<li>La légende automatique a été modifiée. Elle inclut maintenant les lignes de lots et ne différencie plus les arbres.</li>
+		<li>Deux nouveaux format de préparation sont disponible.</li>
+		<li>De nouveaux blocs de notes ont été ajoutés.</li>
+	</ul>
+	<hr>
+	<h2>Mise a jour v23.4.3</h2>2024-03-06
+	<h3>Corrections apportées:</h3>
+	<ul>
+		<li>Les ShapeFiles (comme les courbes de niveaux, les milieux humides,etc) sont maintenant importable directement avec la commande IMPORTSIG et un bouton raccourci a été ajouté a la palette d'outils.</li>
+		<li>Une fonction de vérification est disponible dans la palette d'outils pour aider les dessinateurs en vérifiant quelques éléments.</li>
+		<li>Les lignes électrique ont maintenant toutes le même symbole de type de ligne.</li>
+		<li>Le bloc de l’élément "Rien trouvé" a été remplacé par une version plus petite et plus discernable des symboles de repère.</li>
+		<li>La fonction rot-nos prend maintenant en charge les textes avec des élévations non nul.</li>
+		<li>La fonction <a href="Fonctions/pcode.html">Dictionnaire de Pcode</a> fonctionne maintenant sur toutes les compilations.</li>
+	</ul>
+	<hr>
+	<h2>Mise à jour v23.4.0</h2>2024-01-16
+	<h3>Fonctions ajoutées (palette d'outils)</h3>
+	<big><strong>Commandes:</strong></big><br>
+	<ul>
+		<li><a href="Fonctions\lotcart.html">Lots pour cartouche</a></li>
+		<li><a href="Fonctions\circleslope.html">Pentes sur cercle</a></li>
+		<li><a href="Fonctions\prep.html">Préparation terrain</a></li>
+	</ul>
+	<h3>Corrections apportées:</h3>
+	<ul>
+		<li>La fonction de Distance perpendiculaire ne donnais pas la distance horizontale dans certain cas.</li>
+		<li>La fonction Justifier causait des problèmes si utilisée plusieurs fois.</li>
+		<li>La fonction Arc-Ray n'inscrivais pas les mesures a la bonne taille.</li>
+		<li>La palette de préférences propose maintenant la configuration de l'estompe des xrefs.</li>
+	</ul>
+	<hr>
+	<h2>Mise à jour v23.3.0</h2>2023-11-16
+	<h3>Fonctions ajoutées (palette d'outils)</h3>
+	<big><strong>Commandes:</strong></big><br>
+	<ul>
+		<li><a href="Fonctions\makex.html">Créer calque détruit</a>.</li>
+		<li><a href="Fonctions\matpoint.html">Point associé</a>.</li>
+	</ul>
+	<h3>Fonctions ajoutées (Ruban)</h3>
+	<big><strong>Fonction annotative:</strong></big><br>
+	<ul>
+		<li><a href="Fonctions\uppercote.html">Cotes au dessus</a>.</li>
+	</ul>
+	<h3>Corrections apportées:</h3>
+	<ul>
+		<li>La fonction <a href="Fonctions\legend.html">Légende</a> a été amélioré. Elle gère elle même les blocs annotatifs.</li>
+		<li>Le modèle de préparation terrain à été ajouté au gabarit de présentations.</li>
+		<li>Une fonction temporaire a été ajouter pour créer un tableau de plage de point.</li>
+		<li>La disposition de la palette d'outils "Commandes" à maintenant une catégorie "Informations" pour une meilleurs organisation.</li>
+	</ul>
+	<hr>
+	<h2>Mise à jour v23.2.4</h2>2023-10-23
+	<h3>Fonctions ajoutées (palette d'outils)</h3>
+	<big><strong>Commandes:</strong></big><br>
+	<ul>
+		<li><a href="Fonctions\makep.html">Créer calque projeté</a>.</li>
+	</ul>
+	<h3>Corrections apportées:</h3>
+	<ul>
+		<li>Un indicateur de version a été ajouter. Simplement taper <i>betversion</i> dans la barre de commande pour connaitre la version actuelle et la version disponible.</li>
+		<li>La fonction de légende automatique avais des problèmes avec les blocs d'arbre.</li>
+		<li>Un procédure pour la création de profils terrain est en ligne, vous la retrouverez dans la catégorie méthode du manuel (ou <a href="Methodes\profils.html">ici</a>).</li>
+		<li>La fonction mesure affiche maintenant une ligne de travail pour une meilleur visualisation.</li>
+		<li>La suppression des sommets d'une polyligne prends maintenant en compte la polyligne sélectionnée en la mettant au premier plan.</li>
+	</ul>
+	<hr>
+	<h2>Mise à jour v23.2.3</h2>2023-10-13
+	<h3>Fonctions ajoutées (palette d'outils)</h3>
+	<big><strong>Commandes:</strong></big><br>
+	<ul>
+		<li><a href="Fonctions\Chem.html">Cheminement</a>.</li>
+	</ul>
+	<h3>Corrections apportées:</h3>
+	<ul>
+			<li>Correction des épaisseurs de lignes de la palette d'outils.</li>
+			<li>Ajustement de la distance d'inscription des textes de la fonction mesures rapides (terrain).</li>
+			<li>Ajout d'une trame temporaire à la fonction area-boundary pour une meilleur visibilité.</li>
+			<li>Correction de la fonction Justifier qui interprétais mal les commandes a cause d'un problème de traduction.</li>
+			<li>Le calque E-VEG-ALIGNEM-ARBRES. à maintenant le bon type de ligne.</li>
+			<li>Ajustement de la distance d'inscription des textes de la fonction Distance/Gisement.</li>
+			<li>Vision a été configurer pour générer les profils terrain facilement.</li>
+		</ul>
+	<hr>
+	<h2>Mise à jour v23.2.2</h2>2023-09-28
+	<h3>Fonctions ajoutées (menu contextuel)</h3>
+	<ul>
+		<li><a href="Fonctions\arcline.html">Transformer les segments des polylignes.</a></li>
+	</ul>
+	<h3>Corrections apportées:</h3>
+	<ul>
+			<li>Une erreur d'échelle empêchais la copie de présentation dans certains cas.</li>
+			<li>La fonction de traitement des extraction cadastrale ne fonctionnais pas sur les segment supérieur à 1 000m.</li>
+			<li>La flèche de renvoie pour les annotations des segments trop petits pour le texte pouvais causer des problèmes dans certains cas.</li>
+			<li>Les textes de notes dans les cartouches avaient perdus leurs poignées de déplacement.</li>
+			<li>Les présentation ont étés renommés pour facilité la nouvelle nomenclature.</li>
+		</ul>
+	<hr>
+	<h2>Mise à jour v23.2.1</h2>2023-09-20
+	<h3>Corrections apportées:</h3>
+	<ul>
+		<li>La fonction Mesure rapide (terrain) n'inscrit plus de mesure a 0,00.</li>
+		<li>La fonction Mesure rapide (bâtiment) permet maintenant de sélectionner plusieurs claques.</li>
+		<li>Le menu de préférence propose maintenant un choix quand au comportement du bouton droit de la souris.</li>
+		<li>Une procédure pour expliquer la sélection rapide dans Bricscad est disponible <a href="Methodes\quickselect.html">ici</a>.</li>
+		<li>Les boutons de gestion d'ordre de tracé des calques ne fonctionnaient pas correctement.</li>
+	</ul>
+	<hr>
+	<h2>Mise a jour v23.2.0</h2>2023-09-05
+	<h3>Fonctions ajoutées (palette d'outils)</h3>
+	<big><strong>Texte:</strong></big><br>
+	<b>Description</b><br>
+	<ul>
+		<li><a href="Fonctions\distgis.html">Distance/Gisement</a></li>
+		<li><a href="Fonctions\arcray.html">Arc/rayon</a></li>
+	</ul>
+	<big><strong>Lignes:</strong></big><br>
+	<b>Bâtiments</b><br>
+	<ul>
+		<li><a href="Fonctions\gal.html">Galerie</a></li>
+		<li><a href="Fonctions\esc.html">Escalier</a></li>
+	</ul>
+	<big><strong>Commandes:</strong></big><br>
+	<b>Ménage</b><br>
+	<ul>
+		<li>Fixer les bonnes unités (met simplement les unités système comme il faut)</li>
+		<li>Recharger les types de lignes (Permet de recharger les lignes au cas ou les symboles n'apparaissent pas)</li>
+	</ul>
+	<h3>Fonctions ajoutées (Ruban)</h3>
+	<big><strong>Blocs:</strong></big><br>
+	<ul>
+		<li><a href="Fonctions\dxf.html">Création DXF</a></li>
+	</ul>
+	<big><strong>Vues:</strong></big><br>
+	<ul>
+		<li>SCU Général (Remet le SCU en Général)</li>
+	</ul>
+	<h3>Corrections apportées:</h3>
+	<ul>
+		<li>Les raccourcis d'ouverture, de mise a jour et du manuel ne se ramenais pas correctement sur le bureau chez certaines personnes. La raison a été trouvé, il est important de suivre la procédure (<a class="orange" href="Methodes\desync.html">ici</a>) afin d'être sur que les configurations sont bonnes chez tout le monde.</li>
+		<li>Quelques modifications mineurs au configurations Vision.</li>
+		<li>Des raccourcis clavier pour les commandes Vision sont disponible. Vous pouvez retrouver un tableau des raccourcis <a href="Methodes\shortkeyvision.html" class="orange">ici</a>.</li>
+		<li>La fonction <a href="Fonctions\mesbat.html">Mesures rapides (bâtiments)</a> propose maintenant de sélectionner le calque a isolé.</li>
+	</ul>
+
+	<hr>
+	<h2>Mise à jour v23.1.4</h2>2023-08-22
+	<h3>Corrections apportées:</h3>
+	<ul>
+		<li>La fonction Texte lot (numéro) n'appliquais pas la nouvelle échelle automatiquement.</li>
+		<li>La fonction arc-ray n'inscris pas le texte à la bonne échelle.</li>
+		<li>La barre de recherche du manuel est maintenant fonctionnelle.</li>
+		<li>Certaines couleurs ne s’imprimait pas correctement.</li>
+	</ul>
+	<hr>
+	<h2>Mise a jour v23.1.3</h2>2023-08-15
+	<h3>Corrections apportées:</h3>
+	<ul>
+		<li>La fonction du nuage pour commentaire ne fonctionnais pas.</li>
+		<li>Ajout de fonction Nuage main levé.</li>
+		<li>Correction du nom de la fonction Existant & projeté.</li>
+		<li>Créations de la méthode pour les importations d'extraction avec la fonction <a href="Methodes\dwgcomparer.html">Comparer</a>.</li>
+		<li>Ajout de plusieurs blocs dans la palette d'outils.</li>
+		<li>Ajout de la possibilité de changer la taille des aperçus du manuel.</li>
+		<li>Correction des présentation de l'espace papier.</li>
+		<li>Correction des notes du cartouche.</li>
+	</ul>
+
+	<hr>
+
+	<h2>Mise à jour v23.1.2</h2>2023-08-07
+	<h3>Fonctions ajoutées (palette d'outils)</h3>
+	<big><strong>Commandes:</strong></big>
+	<ul>
+		<li><a href="Fonctions\setfut.html">Existant et projeté</a></li>
+	</ul>
+	<h3>Fonctions ajoutées (Ruban)</h3>
+	<big><strong>Utilitaires:</strong></big><br>
+	<ul>
+		<li><a href="Fonctions\addition.html">Addition/Soustraction</a></li>
+	</ul>
+	<h3>Corrections apportées:</h3>
+	<ul>
+		<li>La fonction <a href="Fonctions\area-updt.html">Mise à jour de superficie</a> laissais une trame dans certain cas.</li>
+		<li>Les formats d'impression de l'imprimante Print As PDF ont été filtrés pour réduire la confusion.</li>
+		<li>Un outils de conversion de superficie a été ajouté dans la section Outils du manuel.</li>
+		<li>Les hauteurs et styles de textes n'était pas à jour dans les configurations de Vision.</li>
+		<li>La commande <img src="Images\control.png" alt="" class="mini"> Préférences propose maintenant de renseigner le Facteur d’échelle combiné.</li>
+	</ul>
+
+	<h2>Mise à jour v23.1.1</h2>2023-07-10
+	<h3>Fonctions ajoutées (palette d'outils)</h3>
+	<big><strong>Commandes:</strong></big>
+	<ul>
+		<li><a href="Fonctions\mesbat.html">Mesures rapides (bâtiment)</a></li>
+		<li><a href="Fonctions\setfut.html">Existant et projeté</a></li>
+	</ul>
+	<h3>Fonctions ajoutées (menu contextuel)</h3>
+	<ul>
+		<li><a href="Fonctions\addremove.html">Ajouter et supprimer des sommets</a></li>
+	</ul>
+	<h3>Corrections apportées:</h3>
+	<ul>
+		<li>Le menu Geoplus ne s’affichait pas au premier démarrage.</li>
+		<li>Les icônes du ruban vision n'apparaissais pas correctement chez certaines personnes.</li>
+		<li>La hauteur des textes de mesures et directions à été corrigée.</li>
+	</ul>
+
+	<hr>
+
+	<h2>Mise à jour v23.1.0</h2>2023-06-09
+	<div class="annonce"><strong><big>IMPORTANT</big></strong>
+		<p>
+			La mise a jour v23.1.0 traite de la version v23 de Bricscad.<br>
+			La version v22 ne seras plus mise a jour.<br>
+			Pour le bon déroulement des choses, il est nécessaire d'installer la version v23 de Bricscad<br>
+			Pour les utilisateurs de Vision, il est nécessaire d'installer la version 33 de Vision plus.<br>
+			La procédure est décrite <a href="Methodes\b23.html">ici</a>.
+		</p>
+	</div>
+	<h3>Fonctions ajoutées (palette d'outils)</h3>
+	<big><strong>Commandes:</strong></big>
+	<ul>
+		<li><a href="Fonctions\pcode.html">Dictionnaire Pcode</a></li>
+		<li><a href="Methodes\cdn.html">Courbes de niveau</a></li>
+		<li><a href="Fonctions\lotiss.html">Mesures rapides (terrain)</a></li>
+	</ul>
+	<h3>Fonctions ajoutées (Ruban)</h3>
+	<big><strong>Texte:</strong></big><br>
+	<ul>
+		<li><a href="Fonctions\ju.html">Justifier</a></li>
+	</ul>
+	<h3>Corrections apportées:</h3>
+	<ul>
+		<li>La commande <a href="Methodes\traitement.html">Traitement extraction cadastrale</a> propose maintenant une option pour vérifier les tolérance graphique</li>
+		<li>Les hachures "Mur de soutènement", "Aménagement paysagé", "Rive" et "Zone tampon" n'étaient pas fonctionnelles.</li>
+		<li>Ajout de la commande <img src="Images\control.png" alt="" class="mini"> Préférences dans la palette d'outils qui permet de rapidement régler certaines variables de préférences utilisateur (taille de curseur, couleur, précision...).</li>
+		<li>Le module VBA est requis pour plusieurs fonction maintenant (traitement des extractions, préférences,...). Si il n'as jamais été installé, lancez l’exécutable C:\Program Files\Bricsys\BricsCAD V23 fr_FR\VBA\BricsCAD-VBA-Runtime.exe</li>
+	</ul>
+
+	<hr>
+
+	<h2>Mise à jour v22.1.2</h2>2023-05-10
+	<h3>Fonctions ajoutées (palette d'outils)</h3>
+	<big><strong>Commandes:</strong></big>
+	<ul>
+		<li><a href="Fonctions\legend.html">Légende</a></li>
+	</ul>
+	<h3>Fonctions ajoutées (Ruban)</h3>
+	<big><strong>Fonction annotative:</strong></big><br>
+	<ul>
+		<li><a href="Fonctions\chasc.html">Changement d’échelle annotative</a></li>
+	</ul>
+	<h3>Corrections apportées:</h3>
+	<ul>
+		<li>L’icône du manuel sur le bureau redirige maintenant vers le manuel.</li>
+		<li>Les formats d'impression ne correspondaient pas à Bricscad et ne s'appliquaient pas automatiquement.</li>
+	</ul>
+
+	<hr>
+
+	<h2>Mise à jour v22.1.1</h2>2023-05-02
+	<h3>Fonctions ajoutées (palette d'outils)</h3>
+	<big><strong>Lignes:</strong></big><br>
+	<b>Bâtiments</b><br>
+	<ul>
+		<li><a href="Fonctions\3cotes.html">3 côtés</a></li>
+		<li><a href="Fonctions\4cotes.html">4 côtés</a></li>
+	</ul>
+	<big><strong>Textes:</strong></big><br>
+	<b>Description</b><br>
+	<ul>
+		<li><a href="Fonctions\bul.html">Bulle pour description technique</a></li>
+		<li><a href="Fonctions\desc.html">Bulle pour parcelle</a></li>
+	</ul>
+
+	<b>Modification de texte</b><br>
+	<ul>
+		<li><a href="Fonctions\rot-element.html">Rotation 180°</a></li>
+		<li><a href="Fonctions\et_maj.html">Minuscule/Majuscule</a></li>
+		<li><a href="Fonctions\parenthese.html">Parenthèse</a></li>
+	</ul>
+	<big><strong>Commandes:</strong></big>
+	<ul>
+		<li>Purger tout (raccourci de la fonction purger en sélectionnant tout ce qui n'est pas utilisé)</li>
+	</ul>
+	<h3>Fonctions ajoutées (Ruban)</h3>
+	<big><strong>Fonction annotative:</strong></big><br>
+	<ul>
+		<li><a href="Fonctions\pente-dim.html">Pente Z</a></li>
+		<li><a href="Fonctions\pente-dim-z0.html">Pente TXT</a></li>
+	</ul>
+	<h3>Blocs ajoutés (palette d'outils)</h3>
+	<big><strong>Blocs:</strong></big><br>
+	<big>Notes</big><br>
+	<ul>
+		<li>Flèche du nord</li>
+		<li>Notes pour photos</li>
+		<li>Notes pour LIDAR</li>
+	</ul>
+	<h3>Corrections apportées:</h3>
+	<ul>
+		<li>Les fonctions "Vue selon élément", "Vue avec 2 points" et "Retour vue initiale" ne mettaient pas le SCU en général.</li>
+		<li>La fonctions de traitement d'extraction cadastrale crashais lorsque le dossier compressé d'extraction était dans un dossier avec un nom qui contient des espaces.</li>
+	</ul>
+</body>
+</html>
