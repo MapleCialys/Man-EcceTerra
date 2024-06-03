@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="..\Config\style.css">
+	<title>DWG Comparer</title>
+</head>
+<body>
+	<div class="manlink"><a href="..\man.html">&larr; Revenir au manuel</a></div>
+<h1>BricsEcceTerra</h1>
+<h2>Manuel</h2>
+<h3>DWG Comparer</h3>
+<p>La fonction DWGCOMPARER a pour but de comparer les éléments communs et différents entre deux fichiers DWG.<br>
+	Ici, nous allons l'utiliser pour importer des extraction cadastrale dans les fichiers de calcul en évitant les doublons.<br><br>
+	<ol><li>Commençons par lancer la commande DWGCOMPARER <br>
+	<img class="button-img" src="..\Images\dwgcomparer\commande.png" alt="Commande.png"><br><br></li>
+	<li>Cette commande ouvre le panneau de comparaison de dessins. <br>
+	<img src="..\Images\dwgcomparer\panneau1.png" alt="panneau" class="button-img" height="300"><br><br></li>
+	<li>Utilisez le bouton <img src="..\Images\dwgcomparer\select.png" alt="select" class="button-img" height="30" style="vertical-align: middle;"> pour choisir le fichier dwg résultant de l'extraction.<br><br></li>
+	<li>Une fois le fichier chargé, affichez la page "Installation" du panneau de comparaison de dessins. <br>
+		<div class="resizable"><img src="..\GIF\compar1.gif" alt="" style="width: 100%;"></div><br><br></li>
+	<li>Zoomez sur la zone a travailler et utiliser l'interrupteur a coté de "Pas dans le dessin courant" pour activer/désactiver la visualisation du fichier d'extraction (en vert). <br>
+		Malheureusement les projections et les distances sur lesquelles nous travaillons ne nous permettes pas d'avoir la précision souhaitée quand aux extractions. La comparaison ne vas donc pas bien détecter les lignes déjà présentes dans notre fichier dû au micro-décalage de distance ou d'orientation. <br>
+		C'est pour cela qu'il est important de vérifier quelles informations sont déjà présentes ou non. <br>
+		<div class="resizable"><img src="..\GIF\compar2.gif" alt="" style="width: 100%;"></div><br><br></li>
+		<li>Une fois les éléments voulus repérés, sélectionnez les. Vous pouvez à tout moment activer ou désactiver la visualisation des objets a importer. Une fois l'ensemble des éléments sélectionnés, validez la sélection avec le bouton  "Conserver". <br>
+		La sélection deviens maintenant grisâtre, les éléments ont bien étés importés. <br>
+		<i>Note: Le bouton conserver n'est pas forcément collé au panneau de comparaison, mais la barre d'outils est obligatoirement quelque pars sur l'écran, généralement le coin supérieur gauche. </i><br> <img src="..\Images\conserv.png" alt="" class="button-img">
+		<br>
+		<div class="resizable"><img src="..\GIF\compar3.gif" alt="" style="width: 100%;"></div><br><br></li>
+		<li>Vous pouvez maintenant utiliser le bouton <img src="..\Images\dwgcomparer\fin.png" alt="Fin de comparaison" class="button-img" height="30" style="vertical-align: middle;"> pour terminer l'opération. <br>
+			<div class="resizable"><img src="..\GIF\compar4.gif" alt="" style="width: 100%"></div></li>
+	</ol>
+</p>
+</body>
+</html>

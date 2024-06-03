@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Profils terrain</title>
+	<link rel="stylesheet" type="text/css" href="..\Config\style.css">
+</head>
+<body>
+	<div class="manlink"><a href="..\man.html">&larr; Revenir au manuel</a></div>
+<h1>BricsEcceTerra</h1>
+<h2>Manuel</h2>
+<h3>Profils terrain</h3>
+<div class="annonce"><strong><big>IMPORTANT</big></strong>
+	<p>
+		Ceci est la version obsolète de la méthode de création de profils qui utilisais vision. <br>
+Pour la dernière version plus simple et plus rapide veuillez vous référer à la fonction <a href="..\Fonctions\grid.html">Grille de profil</a>.
+	</p>
+</div>
+<p>La création des profils terrain nécessite plusieurs étapes.<br>
+	Nous allons voir un exemple ici.
+	<ol>
+		<li>On commence par copier toutes les informations dans un nouveau dessin. En général, c'est à l'étape de la préparation pour les dessinateurs et le profil est créé en même temps dans ce dessin. <br>
+			<img src="..\Images\profils\01.png" alt="" width="800" onclick="window.open(this.src, '_blank');"></li><br>
+		<li>Créons une base de données pour ce fichier (en connectant vision et en enregistrant le fichier sqlite dans le dossier <i>Analyse</i> du dossier concerné) puis ouvrons la fenêtre de vision civil (<i>Utilitaire&rarr;Civil</i> ou <i>MNT</i> dans la barre de commande) et créons une nouvelle surface avec un clic droit.<br><br>
+			<img src="..\Images\profils\02.png" alt="" width="800" onclick="window.open(this.src, '_blank');"></li><br>	
+		<li>Choisissez un nom de surface en rapport avec le dossier, ici pour l'exemple, nous utiliserons <i>Surface_exemple</i>.<br><br>
+			<img src="..\Images\profils\03.png" alt="" width="800" onclick="window.open(this.src, '_blank');"></li><br>
+		<li>Deux options s'offrent à nous pour ajouter des points à cette surface, la première par les nodes, la seconde par les textes d'élévations. Ici, nous allons les sélectionner par texte, on va donc commencer par isoler le calque E-GEO-POINT-ELEV. Dans la fenêtre de vision civil, un clic droit dans l'espace blanc nous montre les options.<br><br>
+			<img src="..\Images\profils\04.png" alt="" width="800" onclick="window.open(this.src, '_blank');"><br><br></li>
+		<li>Une fois tous les points sélectionnés, on vérifie qu'il n'y a pas de donnée aberrante (un Z à 0.00, une seule altitude très différente des autres,...).<br><br>
+			<img src="..\Images\profils\05.png" alt="" width="800" onclick="window.open(this.src, '_blank');"><br><br></li>
+		<li>Une fois vérifié, on retourne sur l'onglet <i>Surface</i> et on sauvegarde notre surface. Allumons tous les calques maintenant.<br><br>
+			<img src="..\Images\profils\06.png" alt="" width="800" onclick="window.open(this.src, '_blank');"><br><br></li>
+		<li>On peut maintenant développer notre surface grâce au petit + et aller dans la catégorie <i>Dessin</i>. On commence par <button>Trianguler</button> et ensuite dessiner les triangles.<br><br>
+			<img src="..\Images\profils\07.png" alt="" width="800" onclick="window.open(this.src, '_blank');"><br></li>
+		<li>On voit maintenant nos triangles apparaitre.<br><br>
+			<img src="..\Images\profils\08.png" alt="" width="800" onclick="window.open(this.src, '_blank');"><br><br></li>
+		<li>Nous voila au moment d'éditer les triangles.<br>
+			L'objectif ici est de casser les triangles qui n'ont pas lieu d’être. Dans notre exemple ici, un triangle coupe une ligne de talus, la représentation de la pente n'est donc pas correct. <br>
+			En utilisant le bouton <button>Editer les triangles</button> nous pouvons changer la disposition des triangle jusqu'à obtenir une configuration satisfaisante. <br>
+			Cette édition concerne entre autre les talus, les murs de soutènement et tout ce qui représente une cassure dans la topographie du terrain.<br><br>
+			<img src="..\Images\profils\09.gif" alt="" width="800" onclick="window.open(this.src, '_blank');"><br><br></li>
+		<li>Une fois les triangle édités, nous pouvons éteindre le calque pour y voir plus clair. <br>
+			Nous allons tracer les deux lignes de coupes qui coupent le bâtiment en son centre et les étendre suffisamment. Notre terrain ici est suffisamment petit pour se permettre de dépasser les lignes de lots de chaque cotés.<br><br>
+			<img src="..\Images\profils\10.png" alt="" width="800" onclick="window.open(this.src, '_blank');"><br><br></li>
+		<li>Dans l'interface de vision Civil, cochez la case <i>Créer de nouveaux points sur les intersections</i> et cliquez sur <button>Projeter une ligne sur la surface</button>. Cela vas créer des polylignes 3D bleu sur nos lignes de coupe.<br><br>
+			<img src="..\Images\profils\11.png" alt="" width="600" onclick="window.open(this.src, '_blank');">
+			<img src="..\Images\profils\12.png" alt="" width="300" onclick="window.open(this.src, '_blank');"><br><br></li>
+		<li>Les polylignes créées juste avant vont nous permettre de créer des alignements. <br>
+			Dans l'interface Vision Civil, créons un alignement avec un clic droit (1) et nommons le pour le reconnaitre (dans l'exemple, on le nomme avec l'orientation voulu). <br>
+			Le bouton <button>Piquer polyligne</button> (2) permet de sélectionner la polyligne 3D voulu, ici celle qui coupe le bâtiment dans le sens Ouest-Est. <br>
+			Il est important de vérifier l'orientation de la polyligne, on peux utiliser les coordonnées du premier point par exemple pour en déduire le sens et cliquer sur <button>Inverser</button> au besoin (3). <br>
+			Maintenant nous pouvons refaire la même chose pour l'autre polyligne.<br><br>
+			<img src="..\Images\profils\13.png" alt="" width="800" onclick="window.open(this.src, '_blank');"><br><br></li>
+		<li>Tout le nécessaire pour les profils est maintenant prêt, on peux commencer par créer un nouveau profil dans l'interface Vision Civil. <br>
+			Les éléments obligatoires apparaissent en rouge. Il n'y as théoriquement qu'un choix possible par champ: <i>Surface d'origine</i> attend la surface créer au début, <i>Format profil</i> attend le seul format disponible (géré dans les configuration vision) et enfin <button>Ajouter une ligne de référence</button> nous permet de choisir une de nos deux lignes de coupe. <br>
+			N’oublions pas de donner un nom a notre profil pour le reconnaitre facilement <br>
+			Pour la partie <i>Origine du dessin</i> il faut renseigner soit les coordonnées voulus, soit un point de la base de donnée. La base de donné étant neuve, j'ai pu créer un point 1 pour le désigner comme origine. <br>
+			Gardez en tête que le point d'origine du dessin seras le coin inférieur gauche du profil. <br><br>
+			<img src="..\Images\profils\14.png" alt="" width="800" onclick="window.open(this.src, '_blank');"><br><br></li>
+		<li>Le bouton <button>Visualiser</button> permet d'une part d'avoir un aperçu de notre courbe, mais aussi de remplir automatiquement le champ <i>Plan de comparaison</i> nécessaire pour la suite.<br><br>
+			<img src="..\Images\profils\15.png" alt="" width="800" onclick="window.open(this.src, '_blank');"><br><br></li>
+		<li>Ceci étant fait, nous pouvons fermer la prévisualisation et cliquer sur <button>Dessiner</button> pour créer la version final du profil.<br><br>
+			<img src="..\Images\profils\16.png" alt="" width="800" onclick="window.open(this.src, '_blank');"><br><br></li>
+		<li>Refaite la même chose pour l'autre profile. <br>
+			Il ne reste plus qu'à relier avec une flèche de renvoie le début de la courbe du profile avec le début de la polyligne pour aider le dessinateur a comprendre le sens de la coupe sans difficulté.<br><br>
+			<img src="..\Images\profils\17.png" alt="" width="800" onclick="window.open(this.src, '_blank');"><br></li>
+	</ol><br>

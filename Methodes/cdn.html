@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="..\Config\style.css">
+	<title></title>
+</head>
+<body>
+	<div class="manlink"><a href="..\man.html">&larr; Revenir au manuel</a></div>
+<h1>BricsEcceTerra</h1>
+<h2>Manuel</h2>
+<h3>Courbes de niveau</h3>
+<p>Le traitement des courbes de niveau se déroule en plusieurs étapes.<br>
+	Les commandes nécessaires seront à déterminer en fonction du fichier de base utilisé.
+	<table>
+		<tr>
+			<td><img class="cdn" src="..\Images\cdn.png" alt=""></td>
+			<td><ul>
+				<li>3D&rArr;2D : Transforme les polylignes 3D en polylignes 2D.</li><br>
+				<li>Courbes au mètre : Supprime les courbes qui ont une décimale autre que 0.</li><br>
+				<li>Couleurs aux 5 mètres : Mets en couleur les courbes.</li><br>
+				<li>Cotes courbes de niveau : applique la cote d’élévation pour une courbe sélectionnée.</li><br>
+			</ul></td>
+		</tr>
+	</table><br>
+	La plupart des plans avec courbes de niveau ne nécessite qu'une précision au mètre.<br>
+	Pour ça, la fonction courbes au mètre épure les courbes qui sont sur le calque <button type="button">E-MOD-COURB-MAITRESS</button> et qui sont des polylignes 2D.<br><br>
+	<img src="..\Images\courbe_metre.png" alt=""><br><br>
+	Si les courbes sont des polylignes 3D, utilisez la fonction <button type="button">3D->2D</button>.<br>
+	La fonction <button type="button">Couleurs aux 5 mètres</button> changeras en jaune les courbes principales et en gris les courbes secondaires.<br>
+	Pour placer les cotes sur les courbes de niveau, la fonction <button type="button">Cotes courbes de niveaux</button> demande de sélectionner une courbe et applique à l'endroit voulu son élévation avec un textmask.
+</p><br>
+<i>Utilisation:</i> Model
+<br>
+<br>
+Exemple:<br>
+<video src="..\Video\courbes.mov" width="960" height="540" controls muted autoplay></video>
+</body>
+</html>
