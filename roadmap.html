@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roadmap Contrôleur de levés</title>
+    <style>
+        /* Styles modernes et professionnels */
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 30px 0;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 2.2em;
+            font-weight: 600;
+        }
+        
+        .subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+            margin-top: 10px;
+        }
+        
+        .roadmap-container {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+        
+        .phase {
+            background: white;
+            border-radius: 8px;
+            padding: 25px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            border-left: 5px solid #2a5298;
+            transition: transform 0.3s ease;
+        }
+        
+        .phase:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .phase-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+        
+        .phase-title {
+            font-size: 1.4em;
+            font-weight: 600;
+            color: #1e3c72;
+        }
+        
+        .phase-period {
+            background: #eef4ff;
+            color: #1e3c72;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: 500;
+        }
+        
+        .features {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        .features li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+        
+        .features li:before {
+            content: "•";
+            color: #2a5298;
+            font-weight: bold;
+            position: absolute;
+            left: 10px;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        /* Responsive */
+        @media print {
+            body {
+                background-color: white;
+            }
+            .phase {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Roadmap Développement Contrôleur de levés</h1>
+        <div class="subtitle">Plan stratégique sur 12 mois | Version 2025/2026</div>
+    </div>
+    
+    <div class="roadmap-container">
+        <!-- Mois 1-2 -->
+        <div class="phase">
+            <div class="phase-header">
+                <div class="phase-title">Fondations & Traçabilité</div>
+                <div class="phase-period">Mois 1-2 | v 0.5</div>
+            </div>
+            <ul class="features">
+                <li>Journal interne des opérations</li>
+                <li>Indicateur de qualité global du levé</li>
+                <li>Horodatage des commentaires</li>
+            </ul>
+        </div>
+        
+        <!-- Mois 3-4 -->
+        <div class="phase">
+            <div class="phase-header">
+                <div class="phase-title">Optimisation Interface</div>
+                <div class="phase-period">Mois 3-4 | v 0.6</div>
+            </div>
+            <ul class="features">
+                <li>Surbrillance avancée des erreurs (couleurs, icônes)</li>
+                <li>Notifications internes pour anomalies majeures</li>
+                <li>Implémentation de raccourcis clavier</li>
+            </ul>
+        </div>
+        
+        <!-- Mois 5-6 -->
+        <div class="phase">
+            <div class="phase-header">
+                <div class="phase-title">Analyses Avancées</div>
+                <div class="phase-period">Mois 5-6 | v 0.7</div>
+            </div>
+            <ul class="features">
+                <li>Filtre et tri avancés dans les tableaux</li>
+                <li>Optimisation du rapport PDF (comité d'harmonisation)</li>
+            </ul>
+        </div>
+        
+        <!-- Mois 7-8 -->
+        <div class="phase">
+            <div class="phase-header">
+                <div class="phase-title">Gestion des Utilisateurs</div>
+                <div class="phase-period">Mois 7-8 | v 0.8</div>
+            </div>
+            <ul class="features">
+                <li>Historique des levés analysés par utilisateur</li>
+                <li>Système d'utilisateurs avec rôles (tech/coordo/arpenteur)</li>
+            </ul>
+        </div>
+        
+        <!-- Mois 9-10 -->
+        <div class="phase">
+            <div class="phase-header">
+                <div class="phase-title">Intégration & Partage</div>
+                <div class="phase-period">Mois 9-10 | v 0.9</div>
+            </div>
+            <ul class="features">
+                <li>Partage rapide du rapport et/ou du fichier JXL</li>
+                <li>Ajout automatique par FTP surveillé</li>
+            </ul>
+        </div>
+        
+        <!-- Mois 11-12 -->
+        <div class="phase">
+            <div class="phase-header">
+                <div class="phase-title">Finalisation</div>
+                <div class="phase-period">Mois 11-12 | v 0.10</div>
+            </div>
+            <ul class="features">
+                <li>Ajustements finaux, stabilisation, tests utilisateurs</li>
+                <li>Révision générale des performances et ergonomie</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="footer">
+        Document confidentiel | © 2025 Ecceterra inc | © Mickael Francois
+    </div>
+</body>
+</html>
