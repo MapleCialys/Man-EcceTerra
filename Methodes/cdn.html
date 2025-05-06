@@ -11,30 +11,38 @@
 <h1>BricsEcceTerra</h1>
 <h2>Manuel</h2>
 <h3>Courbes de niveau</h3>
-<p>Le traitement des courbes de niveau se déroule en plusieurs étapes.<br>
-	Les commandes nécessaires seront à déterminer en fonction du fichier de base utilisé.
+<p>Le traitement des courbes de niveau se déroule à partir du contrôleur de courbes de niveaux.
 	<table>
 		<tr>
-			<td><img class="cdn" src="..\Images\cdn.png" alt=""></td>
-			<td><ul>
-				<li>3D&rArr;2D : Transforme les polylignes 3D en polylignes 2D.</li><br>
-				<li>Courbes au mètre : Supprime les courbes qui ont une décimale autre que 0.</li><br>
-				<li>Couleurs aux 5 mètres : Mets en couleur les courbes.</li><br>
-				<li>Cotes courbes de niveau : applique la cote d’élévation pour une courbe sélectionnée.</li><br>
+			<td><img class="cdn" src="..\Images\contour-controller.png" alt=""></td>
+			<td style="text-align: left;"><ul>
+				<li><button type="button">Convertir les courbes 3D en 2D</button> Permet de convertir les polylignes 3D (élévations différentes pour chaques sommets)<br>en polylignes 2D (même élévation sur tous les sommets)</li><br>
+				<li><button type="button">Ajouter des courbes étrangères</button> Permet de mettre rapidement des polylignes sur les calques des courbes de niveaux</li><br>
+				<li><button type="button">Extraire d'une TIN</button> Permet d'extraine les courbes de niveaux d'une surface TIN</li><br>
+				<li><button type="button">Etiquettes</button> Permet de gérer les étiquettes d'élévation:<br>
+					<ul>
+						<li><button type="button">Centrées</button> Place les étiquettes au milieu de chaque</li>
+						<li><button type="button">Ligne</button> Place les étiquettes en fonction d'une ligne tracé</li>
+						<li><button type="button">Individuelles</button> Place une étiquette sur une ligne voulue</li>
+						<li><button type="button">Effacer</button> Supprime toutes les étiquettes présentes</li>
+					</ul>
+				</li><br>
+				<li><button type="button">Intervale maitresse</button> Gère l'intervalle entre chaque courbe maitresse</li><br>
+				<li><button type="button">Intervale visible</button> Gère l'intervalle entre chaque courbe à afficher</li><br>
 			</ul></td>
 		</tr>
 	</table><br>
-	La plupart des plans avec courbes de niveau ne nécessite qu'une précision au mètre.<br>
-	Pour ça, la fonction courbes au mètre épure les courbes qui sont sur le calque <button type="button">E-MOD-COURB-MAITRESS</button> et qui sont des polylignes 2D.<br><br>
-	<img src="..\Images\courbe_metre.png" alt=""><br><br>
-	Si les courbes sont des polylignes 3D, utilisez la fonction <button type="button">3D->2D</button>.<br>
-	La fonction <button type="button">Couleurs aux 5 mètres</button> changeras en jaune les courbes principales et en gris les courbes secondaires.<br>
-	Pour placer les cotes sur les courbes de niveau, la fonction <button type="button">Cotes courbes de niveaux</button> demande de sélectionner une courbe et applique à l'endroit voulu son élévation avec un textmask.
+	Avant d'extraire les courbes d'une surface TIN, il est conseillé de configurer la TIN avec des intervales de 0.1 pour avoir accès a toute la precision possible.<br>
+	Cette option est disponible dans le panneau de propriétés après avoir sélectionner la TIN.<br><br>
+	<img src="..\Images\tinprop.png" alt=""><br><br>
 </p><br>
 <i>Utilisation:</i> Model
 <br>
 <br>
 Exemple:<br>
-<video src="..\Video\courbes.mov" width="960" height="540" controls muted autoplay></video>
+<div class="resizable">
+	<img src="..\GIF\courbes.gif" style="width: 100%;"></div>
+<div class="resizable">
+	<img src="..\GIF\courbestin.gif" style="width: 100%;"></div>
 </body>
 </html>
